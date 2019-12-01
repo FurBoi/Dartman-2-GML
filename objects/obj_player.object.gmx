@@ -37,6 +37,31 @@ key_right = 0;
 key_jump = 0;
 
 global.dartCD = 0;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Display Heath Bars
+
+instance_create(0,0,obj_displayhealth);
+instance_create(0,0,obj_displayhealth_num);
 </string>
           </argument>
         </arguments>
@@ -131,6 +156,18 @@ if global.camera_panning = 0
         }
         hsp = 0;
     }
+    //Horizontal Collison with BAD OBJECTS
+    if (place_meeting(x+hsp,y,obj_bad))
+    {
+    while(!place_meeting(x+sign(hsp),y,obj_bad))
+        {
+            x += sign(hsp);
+        }
+        hsp = 0;
+            if global.invuln = 0{
+                with (obj_bad) event_perform(ev_other,ev_user0);
+                }
+    }
 
     x += hsp;
 
@@ -142,16 +179,69 @@ if global.camera_panning = 0
             y += sign(vsp);
         }
         vsp = 0;
+
     }
+    
+        //Vertical Collision with BAD OBJECTS
+    if (place_meeting(x,y+vsp,obj_bad))
+    {
+    while(!place_meeting(x,y+sign(vsp),obj_bad))
+        {
+            y += sign(vsp);
+        }
+        vsp = 0;
+        
+        if global.invuln = 0{
+                with (obj_bad) event_perform(ev_other,ev_user0);
+                }
+        
+    }
+    
 
     //check if you are on the ground to grant you more jumps
-    if place_meeting(x,y+1,obj_barrier)
+    if place_meeting(x,y+1,obj_barrier) or place_meeting(x,y+1,obj_bad)
     {
         jumpcount = 2;
     }
 
     y += vsp;
 
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///invuln frames and HP
+
+if global.hp &lt;= 0{
+room_restart();
+global.hp = global.hpmax;
+}
+
+if global.invuln &gt; 0{
+sprite_index = spr_dartman_invuln
+image_speed = 0.1;
+global.invuln -= 1
+}
+
+if global.invuln = 0 &amp;&amp; sprite_index = spr_dartman_invuln{
+sprite_index = spr_dartman
 }
 </string>
           </argument>
@@ -172,6 +262,29 @@ if global.camera_panning = 0
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="96">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scr_boss_pan2(320, 1440, 2);
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="9" enumb="68">
@@ -221,6 +334,60 @@ image_xscale = 1;
 key_left = -1;
 
 image_xscale = -1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="57">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///debug prev room
+if global.debug = 1{
+room_goto_previous();
+show_message("DO OVER");
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="48">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///debug next room
+if global.debug = 1{
+room_goto_next();
+show_message("room skipped");
+}
 </string>
           </argument>
         </arguments>

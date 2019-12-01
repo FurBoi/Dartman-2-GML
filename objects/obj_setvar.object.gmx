@@ -32,18 +32,21 @@ global.hpmax = 10;          //health
 global.dartTier = 0;
 global.dartCD = 0;
 global.playerdirection = 1;
+global.invuln = 0;
 
 global.camera_panning = 0;
 
 global.leveron = 0;
 
 
+global.debug = 0;
+draw_set_font(fnt);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="49">
+    <event eventtype="9" enumb="119">
       <action>
         <libid>1</libid>
         <id>321</id>
@@ -60,7 +63,7 @@ global.leveron = 0;
         <arguments>
           <argument>
             <kind>2</kind>
-            <string>debug activated darts</string>
+            <string>debug mode ENGAGE</string>
           </argument>
         </arguments>
       </action>
@@ -81,6 +84,7 @@ global.leveron = 0;
           <argument>
             <kind>1</kind>
             <string>global.dartTier = 1;
+global.debug = 1;
 </string>
           </argument>
         </arguments>

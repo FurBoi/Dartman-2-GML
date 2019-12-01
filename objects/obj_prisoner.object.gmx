@@ -55,7 +55,7 @@ if place_meeting(x,y,obj_player)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x,y,obj_player)
+            <string>if place_meeting(x,y,obj_player) &amp;&amp; global.dartTier = 0
 {
     show_message("Old Prisoner: The doors... they're open! Finally! After 60 years!");
     show_message("Old Prisoner: You are a brave soul, coming here to save me. Take this, it was passed down from my grandfather.")
@@ -64,6 +64,11 @@ if place_meeting(x,y,obj_player)
     global.dartTier = 1;
     
     global.leveron = 2;
+}
+
+if place_meeting(x,y,obj_player) &amp;&amp; global.dartTier &gt;0
+{
+    show_message("Old Prisoner: Godspeed little fellow!");
 }
 </string>
           </argument>

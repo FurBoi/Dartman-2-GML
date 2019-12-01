@@ -14,10 +14,14 @@
     <sound>sound\snd_hurt</sound>
     <sound>sound\snd_switch_on</sound>
     <sound>sound\snd_shoot</sound>
+    <sound>sound\snd_landing</sound>
+    <sound>sound\snd_jungle</sound>
+    <sound>sound\snd_ambientjungle</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="character">
       <sprite>sprites\spr_dartman</sprite>
+      <sprite>sprites\spr_dartman_invuln</sprite>
       <sprite>sprites\spr_dartman_shoot</sprite>
       <sprite>sprites\spr_prisoner</sprite>
       <sprite>sprites\spr_player_hitbox</sprite>
@@ -27,15 +31,22 @@
     </sprites>
     <sprites name="projectiles">
       <sprite>sprites\spr_dart</sprite>
+      <sprite>sprites\spr_greendart</sprite>
       <sprite>sprites\spr_slash</sprite>
       <sprite>sprites\spr_proj_dagger</sprite>
     </sprites>
     <sprites name="tools">
       <sprite>sprites\spr_barrier</sprite>
+      <sprite>sprites\spr_barrier_14_14</sprite>
+      <sprite>sprites\spr_barrier_woodspike_up</sprite>
+      <sprite>sprites\spr_barrier_woodspike_down</sprite>
+      <sprite>sprites\spr_barrier_woodspike_right</sprite>
+      <sprite>sprites\spr_barrier_woodspike_left</sprite>
+      <sprite>sprites\spr_barrier_30_30</sprite>
       <sprite>sprites\spr_bad</sprite>
       <sprite>sprites\spr_portal</sprite>
       <sprite>sprites\spr_enemymove</sprite>
-      <sprite>sprites\spr_climb</sprite>
+      <sprite>sprites\spr_cam</sprite>
     </sprites>
     <sprites name="particles">
       <sprite>sprites\spr_poof</sprite>
@@ -51,6 +62,7 @@
       <sprite>sprites\spr_loadgame</sprite>
       <sprite>sprites\spr_items</sprite>
       <sprite>sprites\spr_e_key</sprite>
+      <sprite>sprites\spr_healthmenu</sprite>
     </sprites>
     <sprites name="danger">
       <sprite>sprites\spr_woodspike0</sprite>
@@ -62,6 +74,10 @@
       <sprite>sprites\spr_stonespike2</sprite>
       <sprite>sprites\spr_stonespike3</sprite>
       <sprite>sprites\spr_lava_top</sprite>
+      <sprite>sprites\spr_water_top</sprite>
+      <sprite>sprites\spr_roomborder</sprite>
+      <sprite>sprites\spr_darttrap_idle</sprite>
+      <sprite>sprites\spr_darttrap_shoot</sprite>
     </sprites>
     <sprites name="switches">
       <sprite>sprites\spr_lever0</sprite>
@@ -72,17 +88,24 @@
       <sprite>sprites\spr_button0on</sprite>
       <sprite>sprites\spr_button1on</sprite>
     </sprites>
+    <sprite>sprites\spr_woodcrate</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_forest</background>
     <background>background\bg_cave</background>
     <background>background\bg_portal</background>
+    <background>background\bg_howard</background>
     <background>background\bg_test</background>
     <background>background\bg_title</background>
+    <background>background\bg_jungle</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_text.gml</script>
+    <scripts name="phases">
+      <script>scripts\scr_boss_pan.gml</script>
+      <script>scripts\scr_boss_pan2.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -96,16 +119,23 @@
     <objects name="tools">
       <object>objects\obj_barrier</object>
       <object>objects\obj_bad</object>
+      <object>objects\obj_bad_instantdeath</object>
+      <object>objects\obj_bad_woodspike</object>
+      <object>objects\obj_bad_stonespike</object>
       <object>objects\obj_text</object>
       <object>objects\obj_portal</object>
       <object>objects\obj_enemymove</object>
-      <object>objects\obj_climb</object>
+      <object>objects\obj_cam</object>
       <object>objects\obj_setvar</object>
       <object>objects\obj_music_forest</object>
       <object>objects\obj_music_cave_ambient</object>
       <object>objects\obj_music_cave</object>
+      <object>objects\obj_music_jungle_ambient</object>
+      <object>objects\obj_music_jungle</object>
       <object>objects\obj_enddemo</object>
       <object>objects\obj_drawtext</object>
+      <object>objects\obj_displayhealth</object>
+      <object>objects\obj_displayhealth_num</object>
     </objects>
     <objects name="danger">
       <object>objects\obj_woodenspike0</object>
@@ -117,10 +147,14 @@
       <object>objects\obj_stonespike2</object>
       <object>objects\obj_stonespike3</object>
       <object>objects\obj_lava_top</object>
+      <object>objects\obj_water_top</object>
+      <object>objects\obj_roomborder</object>
     </objects>
     <objects name="enemies">
       <object>objects\obj_bandit</object>
       <object>objects\obj_bandit_elite</object>
+      <object>objects\obj_darttrap_right</object>
+      <object>objects\obj_darttrap_left</object>
     </objects>
     <objects name="gui">
       <object>objects\obj_logo</object>
@@ -136,6 +170,7 @@
       <object>objects\obj_gate1</object>
       <object>objects\obj_button0</object>
       <object>objects\obj_button1</object>
+      <object>objects\obj_woodcrate</object>
     </objects>
     <objects name="projectiles">
       <objects name="friendly">
@@ -143,6 +178,7 @@
       </objects>
       <objects name="enemy">
         <object>objects\obj_bandit_dagger</object>
+        <object>objects\obj_darttrap_dart</object>
       </objects>
     </objects>
     <objects name="npc">
@@ -162,7 +198,10 @@
     <room>rooms\rm_cave2</room>
     <room>rooms\rm_cave3</room>
     <room>rooms\rm_cave4</room>
-    <room>rooms\room12</room>
+    <room>rooms\rm_jungle0</room>
+    <room>rooms\rm_jungle1</room>
+    <room>rooms\rm_enddemo</room>
+    <room>rooms\rm_boss1</room>
     <room>rooms\rm_template</room>
   </rooms>
   <constants number="11">

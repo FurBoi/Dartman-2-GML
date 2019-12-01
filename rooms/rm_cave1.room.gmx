@@ -76,7 +76,7 @@
     <instance objName="obj_barrier" x="1696" y="32" name="inst_75680110" locked="0" code="" scaleX="2" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="1760" y="32" name="inst_04666FA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="1056" y="0" name="inst_C1164A4A" locked="0" code="" scaleX="23" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bad" x="0" y="960" name="inst_29EB2C12" locked="0" code="" scaleX="80.5161285400391" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bad_instantdeath" x="0" y="960" name="inst_29EB2C12" locked="0" code="" scaleX="80.5161285400391" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="0" y="-32" name="inst_F969D508" locked="0" code="" scaleX="33" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="-32" y="0" name="inst_80033E41" locked="0" code="" scaleX="1" scaleY="30" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemymove" x="1216" y="768" name="inst_BC968C6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
