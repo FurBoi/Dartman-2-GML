@@ -53,6 +53,7 @@
     <instance objName="obj_logo" x="192" y="160" name="inst_1EE40FDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_setvar" x="0" y="0" name="inst_DC468DF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_music_forest" x="608" y="0" name="inst_DB32850E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fullscreencontroller" x="608" y="448" name="inst_832E165B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

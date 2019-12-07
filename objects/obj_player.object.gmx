@@ -58,10 +58,12 @@ global.dartCD = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Display Heath Bars
+            <string>///Display Heath Bars &amp; fullscreen button
 
 instance_create(0,0,obj_displayhealth);
 instance_create(0,0,obj_displayhealth_num);
+
+instance_create(0,0,obj_fullscreencontroller);
 </string>
           </argument>
         </arguments>
@@ -242,6 +244,34 @@ global.invuln -= 1
 
 if global.invuln = 0 &amp;&amp; sprite_index = spr_dartman_invuln{
 sprite_index = spr_dartman
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="56">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///allow teleporting to mouse cursor whilst in debug mode
+if global.debug = 1{
+x = mouse_x;
+y = mouse_y;
+instance_create(mouse_x,mouse_y,obj_poof);
 }
 </string>
           </argument>

@@ -78,6 +78,7 @@
       <sprite>sprites\spr_roomborder</sprite>
       <sprite>sprites\spr_darttrap_idle</sprite>
       <sprite>sprites\spr_darttrap_shoot</sprite>
+      <sprite>sprites\spr_bronzesaw</sprite>
     </sprites>
     <sprites name="switches">
       <sprite>sprites\spr_lever0</sprite>
@@ -87,8 +88,8 @@
       <sprite>sprites\spr_button1</sprite>
       <sprite>sprites\spr_button0on</sprite>
       <sprite>sprites\spr_button1on</sprite>
+      <sprite>sprites\spr_woodcrate</sprite>
     </sprites>
-    <sprite>sprites\spr_woodcrate</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_forest</background>
@@ -136,6 +137,7 @@
       <object>objects\obj_drawtext</object>
       <object>objects\obj_displayhealth</object>
       <object>objects\obj_displayhealth_num</object>
+      <object>objects\obj_fullscreencontroller</object>
     </objects>
     <objects name="danger">
       <object>objects\obj_woodenspike0</object>
@@ -152,6 +154,7 @@
     </objects>
     <objects name="enemies">
       <object>objects\obj_bandit</object>
+      <object>objects\obj_bronzesaw</object>
       <object>objects\obj_bandit_elite</object>
       <object>objects\obj_darttrap_right</object>
       <object>objects\obj_darttrap_left</object>
@@ -188,21 +191,28 @@
   <rooms name="rooms">
     <room>rooms\rm_logo</room>
     <room>rooms\rm_menu</room>
-    <room>rooms\rm_forest1</room>
-    <room>rooms\rm_forest2</room>
-    <room>rooms\rm_forest3</room>
-    <room>rooms\rm_forest4</room>
-    <room>rooms\rm_forest5</room>
-    <room>rooms\rm_cave0</room>
-    <room>rooms\rm_cave1</room>
-    <room>rooms\rm_cave2</room>
-    <room>rooms\rm_cave3</room>
-    <room>rooms\rm_cave4</room>
-    <room>rooms\rm_jungle0</room>
-    <room>rooms\rm_jungle1</room>
+    <rooms name="forest">
+      <room>rooms\rm_forest1</room>
+      <room>rooms\rm_forest2</room>
+      <room>rooms\rm_forest3</room>
+      <room>rooms\rm_forest4</room>
+      <room>rooms\rm_forest5</room>
+    </rooms>
+    <rooms name="cave">
+      <room>rooms\rm_cave0</room>
+      <room>rooms\rm_cave1</room>
+      <room>rooms\rm_cave2</room>
+      <room>rooms\rm_cave3</room>
+      <room>rooms\rm_cave4</room>
+    </rooms>
+    <rooms name="jungle">
+      <room>rooms\rm_jungle0</room>
+      <room>rooms\rm_jungle1</room>
+    </rooms>
     <room>rooms\rm_enddemo</room>
     <room>rooms\rm_boss1</room>
     <room>rooms\rm_template</room>
+    <room>rooms\room17</room>
   </rooms>
   <constants number="11">
     <constant name="item.copperbar">5</constant>
