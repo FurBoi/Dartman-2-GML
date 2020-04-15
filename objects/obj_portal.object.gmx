@@ -33,7 +33,7 @@ image_speed = 1.3
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_player">
+    <event eventtype="4" ename="obj_player_parent">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -76,7 +76,7 @@ image_speed = 1.3
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x,y,obj_player)
+            <string>if place_meeting(x,y,obj_player_parent)
 {
     draw_sprite(spr_e_key,-1,x,y-32);
 }

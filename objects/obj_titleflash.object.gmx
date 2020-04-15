@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>bruh = 0;
+            <string>depth = -999;
+bruh = 0;
 alarm[0] = 7;
 </string>
           </argument>

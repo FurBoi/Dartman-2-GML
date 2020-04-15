@@ -27,10 +27,15 @@
             <kind>1</kind>
             <string>///setting variables
 
+global.characterselected = 1; //1- dartman 2- tyrone
 global.hp = 10;
 global.hpmax = 10;          //health
+global.resource = 10;
+global.resourcemax = 10;          //resource
 global.dartTier = 0;
 global.dartCD = 0;
+global.ammoMax = 6;         //ammo
+global.ammoCurrent = global.ammoMax;
 global.playerdirection = 1;
 global.invuln = 0;
 

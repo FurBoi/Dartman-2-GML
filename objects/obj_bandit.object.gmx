@@ -55,6 +55,34 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_dart_normal">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///create 3-6coins on death
+repeat(irandom_range(3,6))
+{
+    instance_create(x,y,obj_coin);
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_enemymove">
       <action>
         <libid>1</libid>
@@ -99,6 +127,34 @@
             <string>dir *= -1;
 
 image_xscale = dir;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_swinging_weapon">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///create 3-6coins on death
+repeat(irandom_range(3,6))
+{
+    instance_create(x,y,obj_coin);
+}
+
 </string>
           </argument>
         </arguments>

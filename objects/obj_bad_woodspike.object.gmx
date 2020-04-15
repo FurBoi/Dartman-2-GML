@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///3dmg 30invuln
-if distance_to_object(obj_player) &lt; 8{
+if distance_to_object(obj_player_parent) &lt; 8{
 audio_play_sound(snd_hurt,1,false); 
 
 global.hp -= 3;

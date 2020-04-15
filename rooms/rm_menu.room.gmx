@@ -56,6 +56,18 @@
     <instance objName="obj_title2" x="640" y="176" name="inst_CBC59649" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_newgame" x="-192" y="224" name="inst_5E00AA0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fullscreencontroller" x="608" y="448" name="inst_BA074E55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_choosecharbutton" x="-192" y="320" name="inst_7AB30D6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_debugroombutton" x="864" y="416" name="inst_CB67C45F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spawnpoint" x="256" y="32" name="inst_71604EE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="-32" y="-128" name="inst_A104192D" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="0" y="-160" name="inst_3FBD32EC" locked="0" code="" scaleX="20" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="640" y="-128" name="inst_83F2BD7A" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="0" y="96" name="inst_3AC1D150" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="128" y="96" name="inst_E94EADB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="64" y="128" name="inst_EEC7A0ED" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="160" y="64" name="inst_102DA97E" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="384" y="96" name="inst_C18664EE" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="544" y="32" name="inst_05077C7D" locked="0" code="" scaleX="3" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_forest" x="0" y="96" w="32" h="32" xo="32" yo="0" id="10000000" name="inst_518244B0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -309,8 +321,6 @@
     <tile bgName="bg_forest" x="32" y="384" w="32" h="32" xo="32" yo="32" id="10000248" name="inst_E28900E2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="32" y="416" w="32" h="32" xo="32" yo="32" id="10000249" name="inst_83A35709" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="64" y="416" w="32" h="32" xo="32" yo="32" id="10000250" name="inst_B0CD06EE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_title" x="256" y="0" w="32" h="64" xo="0" yo="0" id="10000251" name="inst_3F91463C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_title" x="352" y="0" w="32" h="64" xo="32" yo="0" id="10000252" name="inst_47AA2BBB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

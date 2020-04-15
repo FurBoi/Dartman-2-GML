@@ -28,7 +28,7 @@
             <string>image_speed = 0.5
 
 
-move_towards_point(obj_player.x,obj_player.y-24,5);
+move_towards_point(obj_player_parent.x,obj_player_parent.y-24,5);
 </string>
           </argument>
         </arguments>

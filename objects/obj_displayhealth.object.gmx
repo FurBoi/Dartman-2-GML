@@ -27,7 +27,10 @@
             <kind>1</kind>
             <string>var pc;
 pc = (global.hp / global.hpmax) * 100;
-draw_healthbar(96, 32, 388, 64, pc, c_black, c_red, c_lime, 0, true, true)
+draw_healthbar(96, 32, 388, 64, pc, c_black, c_red, c_lime, 0, true, true); //bar indicator
+
+draw_text(288,72,string(global.hp) + "/" + string(global.hpmax)); //text indicator
+
 </string>
           </argument>
         </arguments>
