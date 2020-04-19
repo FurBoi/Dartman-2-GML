@@ -3,8 +3,8 @@
   <caption></caption>
   <width>2000</width>
   <height>960</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -75,6 +75,7 @@
     <instance objName="obj_spawnpoint" x="96" y="256" name="inst_A4C29B38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="1536" y="416" name="inst_941CB2B8" locked="0" code="" scaleX="4" scaleY="0.096000000834465" colour="4294967295" rotation="0"/>
     <instance objName="obj_coinspawner" x="256" y="128" name="inst_6D90AFBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shopkeeper" x="608" y="424" name="inst_E62C1FFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_jungle" x="1280" y="480" w="32" h="32" xo="192" yo="128" id="10024212" name="inst_40846E14" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

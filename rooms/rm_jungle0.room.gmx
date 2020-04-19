@@ -53,22 +53,22 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_water_top" x="160" y="448" name="inst_1891C075" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water_top" x="192" y="448" name="inst_A56C1C12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water_top" x="224" y="448" name="inst_E696D1EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water_top" x="256" y="448" name="inst_BE784A6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water_top" x="288" y="448" name="inst_E48CC889" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water_top" x="320" y="448" name="inst_707D3D48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water_top" x="352" y="448" name="inst_E39A6655" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water_top" x="384" y="448" name="inst_12395963" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water_top" x="416" y="448" name="inst_960B7715" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water_top" x="448" y="448" name="inst_06601F19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_top" x="160" y="384" name="inst_1891C075" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_top" x="192" y="384" name="inst_A56C1C12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_top" x="224" y="384" name="inst_E696D1EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_top" x="256" y="384" name="inst_BE784A6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_top" x="288" y="384" name="inst_E48CC889" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_top" x="320" y="384" name="inst_707D3D48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_top" x="352" y="384" name="inst_E39A6655" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_top" x="384" y="384" name="inst_12395963" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_top" x="416" y="384" name="inst_960B7715" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water_top" x="448" y="384" name="inst_06601F19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="0" y="160" name="inst_CEB65ACA" locked="0" code="" scaleX="30" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_barrier" x="-32" y="0" name="inst_106A8935" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_barrier" x="0" y="-32" name="inst_70A7AFF7" locked="0" code="" scaleX="30" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_barrier" x="960" y="0" name="inst_3D3D00FA" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_barrier" x="512" y="0" name="inst_66249815" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_barrier" x="544" y="0" name="inst_4228F600" locked="0" code="" scaleX="11" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="-32" y="-64" name="inst_106A8935" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="0" y="-96" name="inst_70A7AFF7" locked="0" code="" scaleX="30" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="960" y="-64" name="inst_3D3D00FA" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="512" y="-64" name="inst_66249815" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrier" x="544" y="-64" name="inst_4228F600" locked="0" code="" scaleX="11" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_music_jungle_ambient" x="0" y="-64" name="inst_C7805635" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_portal" x="864" y="96" name="inst_5A683DE4" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawnpoint" x="64" y="128" name="inst_C2DDFF02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -303,6 +303,50 @@
     <tile bgName="bg_jungle" x="512" y="32" w="32" h="32" xo="96" yo="96" id="10021100" name="inst_D8ED63CA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_jungle" x="480" y="32" w="32" h="32" xo="64" yo="96" id="10021101" name="inst_F1FD574F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_jungle" x="832" y="128" w="32" h="32" xo="128" yo="0" id="10021102" name="inst_F8CB7BA0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="160" y="416" w="32" h="32" xo="160" yo="96" id="10027305" name="inst_0FA0D68B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="192" y="416" w="32" h="32" xo="160" yo="96" id="10027306" name="inst_9A72D299" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="224" y="416" w="32" h="32" xo="160" yo="96" id="10027307" name="inst_3645257A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="256" y="416" w="32" h="32" xo="160" yo="96" id="10027308" name="inst_0008B5E6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="288" y="416" w="32" h="32" xo="160" yo="96" id="10027309" name="inst_1BC4AF0E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="320" y="416" w="32" h="32" xo="160" yo="96" id="10027310" name="inst_B7D9B8BB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="352" y="416" w="32" h="32" xo="160" yo="96" id="10027311" name="inst_506A3446" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="384" y="416" w="32" h="32" xo="160" yo="96" id="10027312" name="inst_9C66DACE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="416" y="416" w="32" h="32" xo="160" yo="96" id="10027313" name="inst_BC3779CC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="448" y="416" w="32" h="32" xo="160" yo="96" id="10027314" name="inst_0EA7EA6F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="448" y="448" w="32" h="32" xo="160" yo="96" id="10027315" name="inst_78D1A574" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="416" y="448" w="32" h="32" xo="160" yo="96" id="10027316" name="inst_3B05AA7B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="384" y="448" w="32" h="32" xo="160" yo="96" id="10027317" name="inst_7DE3F918" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="352" y="448" w="32" h="32" xo="160" yo="96" id="10027318" name="inst_20C6707A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="320" y="448" w="32" h="32" xo="160" yo="96" id="10027319" name="inst_1179C68C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="288" y="448" w="32" h="32" xo="160" yo="96" id="10027320" name="inst_2F4524B0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="256" y="448" w="32" h="32" xo="160" yo="96" id="10027321" name="inst_5E7AE93A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="224" y="448" w="32" h="32" xo="160" yo="96" id="10027322" name="inst_320CEE97" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="192" y="448" w="32" h="32" xo="160" yo="96" id="10027323" name="inst_F80FC170" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="160" y="448" w="32" h="32" xo="160" yo="96" id="10027324" name="inst_63FF38EA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="512" y="-32" w="32" h="32" xo="0" yo="32" id="10027326" name="inst_A4BEBFAB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="512" y="-64" w="32" h="32" xo="0" yo="32" id="10027327" name="inst_F3F9704B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="864" y="-32" w="32" h="32" xo="64" yo="32" id="10027328" name="inst_7B0E1D84" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="864" y="-64" w="32" h="32" xo="64" yo="32" id="10027329" name="inst_CC773B32" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="544" y="-64" w="32" h="32" xo="32" yo="32" id="10027331" name="inst_8F269A71" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="576" y="-64" w="32" h="32" xo="32" yo="32" id="10027332" name="inst_4F17E635" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="608" y="-64" w="32" h="32" xo="32" yo="32" id="10027333" name="inst_6DB1A735" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="640" y="-64" w="32" h="32" xo="32" yo="32" id="10027334" name="inst_18B18658" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="672" y="-64" w="32" h="32" xo="32" yo="32" id="10027335" name="inst_6AB48F00" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="704" y="-64" w="32" h="32" xo="32" yo="32" id="10027336" name="inst_CB6E421D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="736" y="-64" w="32" h="32" xo="32" yo="32" id="10027337" name="inst_693DCA32" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="768" y="-64" w="32" h="32" xo="32" yo="32" id="10027338" name="inst_5C6E77FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="800" y="-64" w="32" h="32" xo="32" yo="32" id="10027339" name="inst_01516DA4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="832" y="-64" w="32" h="32" xo="32" yo="32" id="10027340" name="inst_8F234F77" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="832" y="-32" w="32" h="32" xo="32" yo="32" id="10027341" name="inst_786A8E67" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="800" y="-32" w="32" h="32" xo="32" yo="32" id="10027342" name="inst_05D165AC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="768" y="-32" w="32" h="32" xo="32" yo="32" id="10027343" name="inst_A6150942" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="736" y="-32" w="32" h="32" xo="32" yo="32" id="10027344" name="inst_6584C78D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="704" y="-32" w="32" h="32" xo="32" yo="32" id="10027345" name="inst_7966ECE1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="672" y="-32" w="32" h="32" xo="32" yo="32" id="10027346" name="inst_FA3EA1E5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="640" y="-32" w="32" h="32" xo="32" yo="32" id="10027347" name="inst_58CBA7D1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="608" y="-32" w="32" h="32" xo="32" yo="32" id="10027348" name="inst_99BC7022" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="576" y="-32" w="32" h="32" xo="32" yo="32" id="10027349" name="inst_735A3EC9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_jungle" x="544" y="-32" w="32" h="32" xo="32" yo="32" id="10027350" name="inst_C8E9C40B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_jungle" x="864" y="128" w="32" h="32" xo="96" yo="0" id="10021104" name="inst_24974DCA" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_jungle" x="896" y="128" w="32" h="32" xo="96" yo="0" id="10021108" name="inst_63F31DD1" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_jungle" x="928" y="128" w="32" h="32" xo="96" yo="0" id="10021109" name="inst_2E98D196" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

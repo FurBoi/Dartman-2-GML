@@ -75,16 +75,21 @@
             <kind>1</kind>
             <string>if global.characterselected = 2{ //if the character selected is Tyrone, show ammo
     repeat(global.ammoCurrent){
-    draw_sprite(spr_bulletGUI_single,0,1152-i*16,896)
+    draw_sprite(spr_bulletGUI_single,0,(global.resW - 160) - (i * 16),896)
     i += 1
 
     }
 
     i = 0;
+    
+    draw_text(global.resW - 114,896,string(global.ammoCurrent) + " / " + string(global.ammoMax));
+    
 }
 
 if global.characterselected = 1{ //if the character selected is Dartman, show blowdart graphic
-    draw_sprite(spr_rusticBlowdartGUI_single,0,1152,896)
+    draw_sprite(spr_rusticBlowdartGUI_single,0,global.resW - 160,896)
+    
+    draw_text(global.resW - 114,896,"--/--");
 }
 </string>
           </argument>

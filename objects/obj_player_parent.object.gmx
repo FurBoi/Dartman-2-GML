@@ -65,10 +65,13 @@ if room != rm_menu
 instance_create(0,0,obj_displayhealth);
 
 instance_create(0,0,obj_ammo_controller);
-instance_create(0,0,obj_draw_ammo_count);
+//instance_create(0,0,obj_draw_ammo_count);
 }
 
 instance_create(0,0,obj_fullscreencontroller);
+instance_create(0,0,obj_window_controller);
+
+instance_create(0,0,obj_discord_rp_controller);
 
 </string>
           </argument>
@@ -288,6 +291,7 @@ if global.camera_panning = 0
 
 if global.hp &lt;= 0{
 room_restart();
+global.inventory_open = 0;
 global.hp = global.hpmax;
 }
 

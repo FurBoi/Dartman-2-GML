@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///setting variables
 
-global.characterselected = 1; //1- dartman 2- tyrone
+global.characterselected = 1; //1- dartman 2- tyrone 3- lamar
 global.hp = 10;
 global.hpmax = 10;          //health
 global.resource = 10;
@@ -39,9 +39,14 @@ global.ammoCurrent = global.ammoMax;
 global.playerdirection = 1;
 global.invuln = 0;
 
-global.camera_panning = 0;
+global.camera_panning = 0; //camera stuffs
+global.resW = 1280;
+global.resH = 960;
+
+global.inventory_open = 0;
 
 global.leveron = 0;
+
 
 
 global.debug = 0;

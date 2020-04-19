@@ -165,6 +165,7 @@ if global.camera_panning = 0
 
 if global.hp &lt;= 0{
 room_restart();
+global.inventory_open = 0;
 global.hp = global.hpmax;
 }
 

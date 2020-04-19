@@ -259,6 +259,9 @@
     <instance objName="&lt;undefined&gt;" x="2032" y="464" name="inst_328950F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="2032" y="448" name="inst_33356AB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawnpoint" x="224" y="288" name="inst_7EA7702E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_oak" x="96" y="224" name="inst_B4B9DA83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_oak" x="1216" y="672" name="inst_DE5BFBE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_oak" x="2208" y="576" name="inst_4F5B826E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_forest" x="96" y="96" w="32" h="32" xo="32" yo="64" id="10003120" name="inst_24A3A9B6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1839,10 +1842,6 @@
     <tile bgName="bg_forest" x="576" y="352" w="32" h="32" xo="64" yo="0" id="10005184" name="inst_9D47D96F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="608" y="384" w="32" h="32" xo="64" yo="0" id="10005185" name="inst_49744C2D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="576" y="384" w="32" h="32" xo="96" yo="64" id="10005186" name="inst_9E0CC031" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_forest" x="128" y="288" w="32" h="32" xo="96" yo="128" id="10005531" name="inst_561F0400" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_forest" x="160" y="288" w="32" h="32" xo="128" yo="128" id="10005532" name="inst_0BA8F2BE" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_forest" x="160" y="256" w="32" h="32" xo="128" yo="96" id="10005533" name="inst_A59F45AA" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_forest" x="128" y="256" w="32" h="32" xo="96" yo="96" id="10005534" name="inst_B67E2526" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="224" y="288" w="32" h="32" xo="128" yo="0" id="10005535" name="inst_FAEB5BFA" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="192" y="288" w="32" h="32" xo="96" yo="0" id="10005536" name="inst_866E0644" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="416" y="512" w="32" h="32" xo="96" yo="0" id="10005537" name="inst_54F1068E" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1869,10 +1868,6 @@
     <tile bgName="bg_forest" x="1696" y="832" w="32" h="32" xo="160" yo="0" id="10005559" name="inst_53075DFB" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="1856" y="832" w="32" h="32" xo="160" yo="0" id="10005560" name="inst_D59DB834" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="1792" y="832" w="32" h="32" xo="128" yo="0" id="10005561" name="inst_59027735" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_forest" x="960" y="224" w="32" h="32" xo="96" yo="128" id="10005562" name="inst_87A32FFC" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_forest" x="992" y="224" w="32" h="32" xo="128" yo="128" id="10005563" name="inst_65A7C33B" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_forest" x="992" y="192" w="32" h="32" xo="128" yo="96" id="10005564" name="inst_D2E89475" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_forest" x="960" y="192" w="32" h="32" xo="96" yo="96" id="10005565" name="inst_3D5F2E40" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="1952" y="800" w="32" h="32" xo="160" yo="0" id="10005566" name="inst_ADB975B4" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="2016" y="640" w="32" h="32" xo="160" yo="0" id="10005567" name="inst_B060A721" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="2112" y="384" w="32" h="32" xo="128" yo="0" id="10005568" name="inst_ECB51762" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1880,10 +1875,6 @@
     <tile bgName="bg_forest" x="2304" y="640" w="32" h="32" xo="96" yo="0" id="10005570" name="inst_27C0C720" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="2272" y="640" w="32" h="32" xo="160" yo="0" id="10005571" name="inst_B061FF06" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_forest" x="2240" y="640" w="32" h="32" xo="128" yo="0" id="10005572" name="inst_6257F673" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_forest" x="2400" y="608" w="32" h="32" xo="96" yo="96" id="10005573" name="inst_DCE30A5E" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_forest" x="2432" y="608" w="32" h="32" xo="128" yo="96" id="10005575" name="inst_04AA67D7" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_forest" x="2400" y="640" w="32" h="32" xo="96" yo="128" id="10005576" name="inst_59A24F20" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_forest" x="2432" y="640" w="32" h="32" xo="128" yo="128" id="10005578" name="inst_F98937C6" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

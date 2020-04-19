@@ -3,6 +3,42 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="2" name="datafiles">
+    <datafile>
+      <name>discord_rich_presence.dll</name>
+      <exists>-1</exists>
+      <size>1599498</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename></filename>
+    </datafile>
+    <datafile>
+      <name>discord-rpc.dll</name>
+      <exists>-1</exists>
+      <size>307720</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename></filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_forest</sound>
@@ -50,6 +86,7 @@
         <sprite>sprites\spr_lamar_slash1</sprite>
       </sprites>
       <sprite>sprites\spr_shopkeeper</sprite>
+      <sprite>sprites\spr_inventory_overworld</sprite>
     </sprites>
     <sprites name="projectiles">
       <sprite>sprites\spr_dart</sprite>
@@ -107,6 +144,13 @@
         <sprite>sprites\spr_tyrone_bio</sprite>
         <sprite>sprites\spr_lamar_bio</sprite>
       </sprites>
+      <sprites name="resGUI">
+        <sprite>sprites\spr_choose_4x3</sprite>
+        <sprite>sprites\spr_choose_16x9</sprite>
+      </sprites>
+      <sprites name="inventoryGUI">
+        <sprite>sprites\spr_inventory</sprite>
+      </sprites>
     </sprites>
     <sprites name="danger">
       <sprite>sprites\spr_woodspike0</sprite>
@@ -136,6 +180,9 @@
       <sprite>sprites\spr_button1on</sprite>
       <sprite>sprites\spr_woodcrate</sprite>
     </sprites>
+    <sprites name="trees">
+      <sprite>sprites\spr_tree_oak</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_forest</background>
@@ -153,6 +200,13 @@
     <scripts name="phases">
       <script>scripts\scr_boss_pan.gml</script>
       <script>scripts\scr_boss_pan2.gml</script>
+    </scripts>
+    <scripts name="DiscordRichPresenceScripts">
+      <script>scripts\discord_init_dll.gml</script>
+      <script>scripts\discord_init_app.gml</script>
+      <script>scripts\discord_update_presence.gml</script>
+      <script>scripts\discord_free_app.gml</script>
+      <script>scripts\discord_free_dll.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -191,6 +245,9 @@
       <object>objects\obj_fullscreencontroller</object>
       <object>objects\obj_spawnpoint</object>
       <object>objects\obj_precip_controller</object>
+      <object>objects\obj_window_controller</object>
+      <object>objects\obj_invcontroller</object>
+      <object>objects\obj_discord_rp_controller</object>
     </objects>
     <objects name="danger">
       <object>objects\obj_woodenspike0</object>
@@ -239,6 +296,17 @@
         <object>objects\obj_choose_lamar_button</object>
         <object>objects\obj_chracter_bio_text</object>
       </objects>
+      <objects name="res_gui">
+        <object>objects\obj_display_text_choose_res</object>
+        <object>objects\obj_choose_4x3</object>
+        <object>objects\obj_choose_16x9</object>
+      </objects>
+      <objects name="inventoryGUI">
+        <object>objects\obj_inventorydisplay</object>
+        <object>objects\obj_inventory_overworld</object>
+        <object>objects\obj_itemsdisplay</object>
+        <object>objects\obj_tooltipdisplay</object>
+      </objects>
     </objects>
     <objects name="switches">
       <object>objects\obj_lever0</object>
@@ -266,11 +334,16 @@
     </objects>
     <objects name="overworld_items">
       <object>objects\obj_coin</object>
+      <object>objects\obj_dropped_item</object>
       <object>objects\obj_coinspawner</object>
+    </objects>
+    <objects name="trees">
+      <object>objects\obj_tree_oak</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_logo</room>
+    <room>rooms\rm_chooseres</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_choosechar</room>
     <rooms name="forest">
@@ -296,22 +369,18 @@
     <room>rooms\rm_debug</room>
     <room>rooms\rm_boss1</room>
     <room>rooms\rm_template</room>
+    <room>rooms\rm_haven</room>
     <room>rooms\rm_tundra1</room>
     <room>rooms\room17</room>
     <room>rooms\room18</room>
   </rooms>
-  <constants number="11">
-    <constant name="item.copperbar">5</constant>
-    <constant name="item.iron">4</constant>
-    <constant name="item.ironbar">7</constant>
-    <constant name="item.null">0</constant>
-    <constant name="item.poison">10</constant>
-    <constant name="item.potion">8</constant>
-    <constant name="item.potionupgrade">9</constant>
-    <constant name="item.tin">3</constant>
-    <constant name="item.tinbar">6</constant>
-    <constant name="item.wood">1</constant>
-    <constant name="item.copper">2</constant>
+  <constants number="6">
+    <constant name="item_health_potion">1</constant>
+    <constant name="item_super_health_potion">2</constant>
+    <constant name="item_energy_potion">3</constant>
+    <constant name="item_super_energy_potion">4</constant>
+    <constant name="item_magazine_clips">5</constant>
+    <constant name="item_melon_slice">6</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
