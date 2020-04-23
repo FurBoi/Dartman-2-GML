@@ -43,7 +43,9 @@ global.camera_panning = 0; //camera stuffs
 global.resW = 1280;
 global.resH = 960;
 
-global.inventory_open = 0;
+global.inventory_open = 0; //inventory and currency
+global.pendingcoins = 0;
+global.coins = 0;
 
 global.leveron = 0;
 

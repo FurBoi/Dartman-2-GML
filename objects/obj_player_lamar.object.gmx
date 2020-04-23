@@ -77,8 +77,17 @@ if global.camera_panning = 0
 
 {
     //React to inputs
+    if frozen = false
+    {
     move = key_left + key_right;
     hsp = move * 4; //movespeed is 4
+    }
+        
+    if frozen = true
+    {
+     hsp = 0;
+    }
+    
     if (vsp &lt; 10) vsp += grav;
 
     //Horizontal Collision
@@ -482,48 +491,6 @@ show_message("room skipped");
 
 }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///jumping
-
-key_jump = 1;
-
-
-if place_meeting(x,y+1,obj_barrier) and jumpcount &gt; 0
-{
-    vsp = -10;
-    airjump = 1;
-    jumpcount -= 1;
-    audio_play_sound(snd_jump,1,false);
-}
-else if !place_meeting(x,y+1,obj_barrier) and jumpcount &gt; 0
-{
-    vsp = -10;
-    airjump = 1;
-    jumpcount -= 2;
-    instance_create(x,y+24,obj_poof);
-    audio_play_sound(snd_airjump,1,false);
-}
 </string>
           </argument>
         </arguments>

@@ -102,6 +102,11 @@ if room = rm_jungle1
 discord_update_presence("--","Jungle, Level 1","jungle512_disc_rp","")
 }
 
+if room = rm_jungle2
+{
+discord_update_presence("--","Jungle, Level 2","jungle512_disc_rp","")
+}
+
 if room = rm_enddemo
 {
 discord_update_presence("that nigga","I am","","")

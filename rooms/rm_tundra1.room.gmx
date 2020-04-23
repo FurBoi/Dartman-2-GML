@@ -67,6 +67,8 @@
     <instance objName="obj_barrier" x="0" y="288" name="inst_E938131B" locked="0" code="" scaleX="8" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="0" y="384" name="inst_646E19E2" locked="0" code="" scaleX="14" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="obj_stonespike0" x="624" y="448" name="inst_57A59F97" locked="0" code="" scaleX="1" scaleY="1" colour="4286644223" rotation="0"/>
+    <instance objName="obj_tree_pine" x="144" y="128" name="inst_C40685D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_pine" x="768" y="224" name="inst_D60CB8E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tundra" x="0" y="288" w="32" h="32" xo="32" yo="0" id="10025010" name="inst_6CFDB8FC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -149,8 +151,6 @@
     <tile bgName="bg_tundra" x="416" y="416" w="32" h="32" xo="64" yo="32" id="10025115" name="inst_140A4A47" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tundra" x="416" y="448" w="32" h="32" xo="64" yo="32" id="10025116" name="inst_6F575FE6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tundra" x="416" y="480" w="32" h="32" xo="64" yo="32" id="10025117" name="inst_05BC3C4F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_tundra" x="160" y="256" w="32" h="32" xo="96" yo="32" id="10025118" name="inst_0EA83970" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_tundra" x="160" y="224" w="32" h="32" xo="96" yo="0" id="10025119" name="inst_730AD9A6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tundra" x="448" y="384" w="32" h="32" xo="160" yo="0" id="10025120" name="inst_AFFD8893" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tundra" x="480" y="384" w="32" h="32" xo="192" yo="0" id="10025121" name="inst_7DA07B98" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tundra" x="512" y="384" w="32" h="32" xo="192" yo="0" id="10025122" name="inst_DB5F1295" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -201,8 +201,6 @@
     <tile bgName="bg_tundra" x="704" y="576" w="32" h="32" xo="32" yo="64" id="10025174" name="inst_3A4DC889" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tundra" x="736" y="576" w="32" h="32" xo="32" yo="64" id="10025175" name="inst_B0538ABB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tundra" x="768" y="576" w="32" h="32" xo="64" yo="64" id="10025176" name="inst_96439057" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_tundra" x="800" y="320" w="32" h="32" xo="96" yo="0" id="10025177" name="inst_2FB10B82" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_tundra" x="800" y="352" w="32" h="32" xo="96" yo="32" id="10025178" name="inst_CF018D3B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tundra" x="416" y="512" w="32" h="32" xo="64" yo="32" id="10025179" name="inst_463F18C0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tundra" x="384" y="512" w="32" h="32" xo="32" yo="32" id="10025180" name="inst_EE9205FD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tundra" x="352" y="512" w="32" h="32" xo="32" yo="32" id="10025181" name="inst_CC82196B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

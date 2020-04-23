@@ -99,6 +99,7 @@ if i = 2 and point_distance(x,y,obj_player_parent.x,obj_player_parent.y) &gt; 9
 else if i = 2 and point_distance(x,y,obj_player_parent.x,obj_player_parent.y) &lt; 9
 {
     audio_play_sound(snd_coin_pickup,1,false);
+    global.pendingcoins++
     instance_destroy();
 }
 

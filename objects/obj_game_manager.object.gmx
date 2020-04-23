@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,45 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///declaring vars
-
-disptext = "no text here";
-
-linesep = 0;
-
-textwidth = 0;
-
-colour = c_white;
-
-alpha = 1;
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw the text
-
-draw_sprite_ext(spr_textbox0,0,0,view_hport[0]-256,2,2,0,c_white,1);
-
-draw_text_ext_color(40,view_hport[0]-214,string(disptext),linesep,textwidth,colour,colour,colour,colour,alpha);
+            <string>///Save Data
+save_data = ds_map_create();
 
 </string>
           </argument>

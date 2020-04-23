@@ -36,6 +36,8 @@ key_left = 0;
 key_right = 0;
 key_jump = 0;
 
+frozen = false;
+
 global.dartCD = 0;
 
 </string>
@@ -203,8 +205,17 @@ if global.camera_panning = 0
 
 {
     //React to inputs
+    if frozen = false
+    {
     move = key_left + key_right;
     hsp = move * 4; //movespeed is 4
+    }
+    
+    if frozen = true
+    {
+     hsp = 0;
+    }
+    
     if (vsp &lt; 10) vsp += grav;
 
     //Horizontal Collision
@@ -371,6 +382,31 @@ instance_create(mouse_x,mouse_y,obj_poof);
           <argument>
             <kind>1</kind>
             <string>scr_boss_pan2(320, 1440, 2);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="70">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>show_message("bing bing bong bong");
+
+frozen = !frozen
 </string>
           </argument>
         </arguments>
@@ -545,22 +581,27 @@ show_message("room skipped");
 
 key_jump = 1;
 
+if !frozen
+{
 
-if place_meeting(x,y+1,obj_barrier) and jumpcount &gt; 0
-{
-    vsp = -10;
-    airjump = 1;
-    jumpcount -= 1;
-    audio_play_sound(snd_jump,1,false);
+    if place_meeting(x,y+1,obj_barrier) and jumpcount &gt; 0
+    {
+        vsp = -10;
+        airjump = 1;
+        jumpcount -= 1;
+        audio_play_sound(snd_jump,1,false);
+    }
+    else if !place_meeting(x,y+1,obj_barrier) and jumpcount &gt; 0
+    {
+        vsp = -10;
+        airjump = 1;
+        jumpcount -= 2;
+        instance_create(x,y+24,obj_poof);
+        audio_play_sound(snd_airjump,1,false);
+    }
+
 }
-else if !place_meeting(x,y+1,obj_barrier) and jumpcount &gt; 0
-{
-    vsp = -10;
-    airjump = 1;
-    jumpcount -= 2;
-    instance_create(x,y+24,obj_poof);
-    audio_play_sound(snd_airjump,1,false);
-}
+
 </string>
           </argument>
         </arguments>

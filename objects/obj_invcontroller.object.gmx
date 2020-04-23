@@ -81,6 +81,12 @@ p = 0;
             {
             instance_destroy();
             }
+            
+            with(obj_coin_stack_gui)
+            {
+            instance_destroy();
+            }
+            
             global.inventory_open = 0;
 
         show_message("");
@@ -114,7 +120,7 @@ p = 0;
             
             p = 0;
             
-             repeat(8)
+            repeat(8)
             {
             with(instance_create(obj_inventorydisplay.x+32+(p*32), obj_inventorydisplay.y+96, obj_itemsdisplay))
                 {
@@ -125,8 +131,16 @@ p = 0;
                 }
             
             p += 1
-
+            
             }
+            
+            with(instance_create(view_xview[0]+8,view_yview+368,obj_coin_stack_gui))
+                {
+                pinx = 8;
+                piny = 368;
+                }
+                
+            
         
         global.inventory_open = 1;    
 
@@ -135,8 +149,9 @@ p = 0;
         show_message("");
         
         }
-        
 }
+        
+
 
 </string>
           </argument>

@@ -8,6 +8,71 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*if place_meeting(x,y,obj_player_parent) &amp;&amp; global.dartTier = 0
+{
+    show_message("Old Prisoner: The doors... they're open! Finally! After 60 years!");
+    show_message("Old Prisoner: You are a brave soul, coming here to save me. Take this, it was passed down from my grandfather.")
+    show_message("Old Prisoner: Handle with care, young one.");
+    show_message("You recieved the RUSTIC BLOWDART, use the UP ARROW to fire!");
+    show_message("Old Prisoner: Godspeed little fellow!");
+    global.dartTier = 1;
+    
+    global.leveron = 2;
+}else if place_meeting(x,y,obj_player_parent) &amp;&amp; global.dartTier &gt;0{
+    show_message("Old Prisoner: The doors... they're open! Finally! After 60 years!");
+    show_message("Old Prisoner: You are a brave soul, coming here to save me. Take this, it was passed down from my grandfather.")
+    show_message("Old Prisoner: Handle with care, you...");
+    show_message("Old Prisoner: Oh, you already have one? That's odd, I was sure this was one of a kind...");
+    show_message("Old Prisoner: ...uhh anywho, godspeed little fellow!");
+    
+    global.leveron = 2;
+}
+*/
+if place_meeting(x,y,obj_player_parent) and keyboard_check_pressed(ord('E'))
+{
+    
+    with(obj_text_manager)
+    {
+        in_text_mode = true;
+        
+        ds_list_clear(queue);
+        ds_list_add(queue,"xue hua piao piao bei feng xiao xiao",)
+        ds_list_add(queue,"tian di yi pian cang mang")
+        ds_list_add(queue,"who're you calling pinhead")
+        
+    }
+    
+    global.dartTier = 1;
+    
+    
+  global.leveron = 2; 
+   
+}
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -33,48 +98,6 @@ if place_meeting(x,y,obj_player_parent)
 {
     draw_sprite(spr_e_key,-1,x,y-32);
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="69">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if place_meeting(x,y,obj_player_parent) &amp;&amp; global.dartTier = 0
-{
-    show_message("Old Prisoner: The doors... they're open! Finally! After 60 years!");
-    show_message("Old Prisoner: You are a brave soul, coming here to save me. Take this, it was passed down from my grandfather.")
-    show_message("Old Prisoner: Handle with care, young one.");
-    show_message("You recieved the RUSTIC BLOWDART, use the UP ARROW to fire!");
-    show_message("Old Prisoner: Godspeed little fellow!");
-    global.dartTier = 1;
-    
-    global.leveron = 2;
-}else if place_meeting(x,y,obj_player_parent) &amp;&amp; global.dartTier &gt;0{
-    show_message("Old Prisoner: The doors... they're open! Finally! After 60 years!");
-    show_message("Old Prisoner: You are a brave soul, coming here to save me. Take this, it was passed down from my grandfather.")
-    show_message("Old Prisoner: Handle with care, you...");
-    show_message("Old Prisoner: Oh, you already have one? That's odd, I was sure this was one of a kind...");
-    show_message("Old Prisoner: ...uhh anywho, godspeed little fellow!");
-    
-    global.leveron = 2;
-}
-
 </string>
           </argument>
         </arguments>

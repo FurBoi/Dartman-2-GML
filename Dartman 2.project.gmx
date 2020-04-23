@@ -73,6 +73,7 @@
         <sprite>sprites\spr_dartman</sprite>
         <sprite>sprites\spr_dartman_invuln</sprite>
         <sprite>sprites\spr_dartman_shoot</sprite>
+        <sprite>sprites\spr_dartman_fishing</sprite>
       </sprites>
       <sprites name="tyrone">
         <sprite>sprites\spr_tyrone</sprite>
@@ -110,6 +111,7 @@
       <sprite>sprites\spr_enemymove</sprite>
       <sprite>sprites\spr_cam</sprite>
       <sprite>sprites\spr_spawnpoint</sprite>
+      <sprite>sprites\obj_dev_textmanager</sprite>
     </sprites>
     <sprites name="particles">
       <sprite>sprites\spr_poof</sprite>
@@ -129,7 +131,8 @@
       <sprite>sprites\spr_choosecharbutton</sprite>
       <sprite>sprites\spr_textbox_320_256</sprite>
       <sprite>sprites\spr_debugroombutton</sprite>
-      <sprite>sprites\spr_items</sprite>
+      <sprite>sprites\spr_savebutton</sprite>
+      <sprite>sprites\spr_loadbutton</sprite>
       <sprite>sprites\spr_e_key</sprite>
       <sprite>sprites\spr_healthmenu</sprite>
       <sprite>sprites\spr_musicicon</sprite>
@@ -150,6 +153,8 @@
       </sprites>
       <sprites name="inventoryGUI">
         <sprite>sprites\spr_inventory</sprite>
+        <sprite>sprites\spr_coin_stack</sprite>
+        <sprite>sprites\spr_items</sprite>
       </sprites>
     </sprites>
     <sprites name="danger">
@@ -179,9 +184,11 @@
       <sprite>sprites\spr_button0on</sprite>
       <sprite>sprites\spr_button1on</sprite>
       <sprite>sprites\spr_woodcrate</sprite>
+      <sprite>sprites\spr_stone_block_jungle</sprite>
     </sprites>
     <sprites name="trees">
       <sprite>sprites\spr_tree_oak</sprite>
+      <sprite>sprites\spr_tree_pine</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -193,6 +200,7 @@
     <background>background\bg_title</background>
     <background>background\bg_jungle</background>
     <background>background\bg_tundra</background>
+    <background>background\bg_fishing</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -208,6 +216,7 @@
       <script>scripts\discord_free_app.gml</script>
       <script>scripts\discord_free_dll.gml</script>
     </scripts>
+    <script>scripts\scr_text_abv.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -223,6 +232,7 @@
       <object>objects\obj_player_lamar</object>
       <object>objects\obj_player_tyrone</object>
       <object>objects\obj_poof</object>
+      <object>objects\obj_player_fishing</object>
     </objects>
     <objects name="tools">
       <object>objects\obj_barrier</object>
@@ -241,13 +251,15 @@
       <object>objects\obj_music_jungle_ambient</object>
       <object>objects\obj_music_jungle</object>
       <object>objects\obj_enddemo</object>
-      <object>objects\obj_drawtext</object>
       <object>objects\obj_fullscreencontroller</object>
       <object>objects\obj_spawnpoint</object>
       <object>objects\obj_precip_controller</object>
       <object>objects\obj_window_controller</object>
       <object>objects\obj_invcontroller</object>
       <object>objects\obj_discord_rp_controller</object>
+      <object>objects\obj_game_manager</object>
+      <object>objects\obj_drawtext</object>
+      <object>objects\obj_text_manager</object>
     </objects>
     <objects name="danger">
       <object>objects\obj_woodenspike0</object>
@@ -306,7 +318,10 @@
         <object>objects\obj_inventory_overworld</object>
         <object>objects\obj_itemsdisplay</object>
         <object>objects\obj_tooltipdisplay</object>
+        <object>objects\obj_coin_stack_gui</object>
       </objects>
+      <object>objects\obj_savebutton</object>
+      <object>objects\object96</object>
     </objects>
     <objects name="switches">
       <object>objects\obj_lever0</object>
@@ -315,6 +330,7 @@
       <object>objects\obj_button0</object>
       <object>objects\obj_button1</object>
       <object>objects\obj_woodcrate</object>
+      <object>objects\obj_stoneblock</object>
     </objects>
     <objects name="projectiles">
       <objects name="friendly">
@@ -330,6 +346,7 @@
     </objects>
     <objects name="npc">
       <object>objects\obj_prisoner</object>
+      <object>objects\obj_fishing_master</object>
       <object>objects\obj_shopkeeper</object>
     </objects>
     <objects name="overworld_items">
@@ -339,6 +356,7 @@
     </objects>
     <objects name="trees">
       <object>objects\obj_tree_oak</object>
+      <object>objects\obj_tree_pine</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -352,6 +370,7 @@
       <room>rooms\rm_forest3</room>
       <room>rooms\rm_forest4</room>
       <room>rooms\rm_forest5</room>
+      <room>rooms\rm_haven</room>
     </rooms>
     <rooms name="cave">
       <room>rooms\rm_cave0</room>
@@ -364,15 +383,15 @@
     <rooms name="jungle">
       <room>rooms\rm_jungle0</room>
       <room>rooms\rm_jungle1</room>
+      <room>rooms\rm_jungle2</room>
     </rooms>
     <room>rooms\rm_enddemo</room>
     <room>rooms\rm_debug</room>
+    <room>rooms\rm_fishing</room>
     <room>rooms\rm_boss1</room>
     <room>rooms\rm_template</room>
-    <room>rooms\rm_haven</room>
-    <room>rooms\rm_tundra1</room>
     <room>rooms\room17</room>
-    <room>rooms\room18</room>
+    <room>rooms\rm_tundra1</room>
   </rooms>
   <constants number="6">
     <constant name="item_health_potion">1</constant>
