@@ -28,6 +28,7 @@
             <string>if !(place_meeting(x,y+4,obj_barrier)){
     y += 4;
 }
+
 </string>
           </argument>
         </arguments>

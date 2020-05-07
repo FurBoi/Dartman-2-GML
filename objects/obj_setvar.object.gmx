@@ -47,6 +47,22 @@ global.inventory_open = 0; //inventory and currency
 global.pendingcoins = 0;
 global.coins = 0;
 
+global.fishingscore = 0; //fishing related
+global.fishingtask[0] = 0; //type
+global.fishingtask[1] = 0;  // amount needed
+global.fishingtask[2] = 0; // reward in coins
+global.fishingstreak = 0;
+
+i = 0;
+
+    repeat (8)
+    {
+    global.fishinginventory[i] = 0;
+    i++
+    }
+
+i = 0;
+
 global.leveron = 0;
 
 

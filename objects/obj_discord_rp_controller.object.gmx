@@ -32,6 +32,11 @@ discord_init_app("700873920466649158")
 discord_update_presence("--","Main Menu","forest512_disc_rp","")
 }
 
+if room = rm_fishing
+{
+discord_update_presence("Fishing Score: " + string(global.fishingscore),"Fishing, Haven","fishing512_disc_rp","")
+}
+
 if room = rm_choosechar
 {
 discord_update_presence("--","Choosing Character","forest512_disc_rp","")
@@ -60,6 +65,11 @@ discord_update_presence("--","Forest, Level 4","forest512_disc_rp","")
 if room = rm_forest5
 {
 discord_update_presence("--","Forest, Level 5","forest512_disc_rp","")
+}
+
+if room = rm_haven
+{
+discord_update_presence("--","Haven","forest512_disc_rp","")
 }
 
 if room = rm_cave0

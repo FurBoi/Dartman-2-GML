@@ -25,9 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = obj_player_parent.x + ((obj_player_parent.image_xscale) * 14);
+            <string>if room = rm_fishing
+    {
+x = obj_player_fishing.x + 14;
 
-y = obj_player_parent.y - 4;
+y = obj_player_fishing.y - 7;
+    }
+else
+    {
+x = obj_player_parent.x + ((obj_player_parent.image_xscale) * 14);
+
+y = obj_player_parent.y - 7;
+    }
 
 </string>
           </argument>

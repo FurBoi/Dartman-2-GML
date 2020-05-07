@@ -63,7 +63,8 @@
     <instance objName="obj_barrier" x="-32" y="288" name="inst_ABBC84F2" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrier" x="1280" y="448" name="inst_C9BB8456" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_portal" x="928" y="608" name="inst_8089A5C2" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spawnpoint" x="32" y="384" name="inst_B01590DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spawnpoint" x="128" y="384" name="inst_B01590DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stash_chest" x="192" y="384" name="inst_8A268947" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_cave" x="0" y="416" w="32" h="32" xo="32" yo="0" id="10025717" name="inst_7C3871FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -988,6 +989,7 @@
     <tile bgName="bg_cave" x="352" y="864" w="32" h="32" xo="160" yo="32" id="10027042" name="inst_777F2446" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_cave" x="352" y="896" w="32" h="32" xo="160" yo="32" id="10027043" name="inst_A8B0D4E0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_portal" x="928" y="608" w="32" h="64" xo="0" yo="0" id="10027044" name="inst_665E6561" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_portal" x="32" y="352" w="32" h="64" xo="32" yo="0" id="10031617" name="inst_2B2A41D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

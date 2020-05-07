@@ -57,6 +57,9 @@
     <sound>sound\snd_reload_pistol</sound>
     <sound>sound\snd_swing_sword</sound>
     <sound>sound\snd_coin_pickup</sound>
+    <sound>sound\snd_inv_open</sound>
+    <sound>sound\snd_inv_close</sound>
+    <sound>sound\snd_alert</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="meleeweapons">
@@ -68,7 +71,6 @@
       <sprite>sprites\spr_splash_dartman</sprite>
       <sprite>sprites\spr_bandit</sprite>
       <sprite>sprites\spr_bandit_elite</sprite>
-      <sprite>sprites\spr_prisoner</sprite>
       <sprites name="dartman">
         <sprite>sprites\spr_dartman</sprite>
         <sprite>sprites\spr_dartman_invuln</sprite>
@@ -88,6 +90,15 @@
       </sprites>
       <sprite>sprites\spr_shopkeeper</sprite>
       <sprite>sprites\spr_inventory_overworld</sprite>
+      <sprites name="npc">
+        <sprites name="fishing_master">
+          <sprite>sprites\spr_fishingmaster_idle</sprite>
+          <sprite>sprites\spr_tacklebox</sprite>
+        </sprites>
+        <sprites name="prisoner">
+          <sprite>sprites\spr_prisoner</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="projectiles">
       <sprite>sprites\spr_dart</sprite>
@@ -137,6 +148,7 @@
       <sprite>sprites\spr_healthmenu</sprite>
       <sprite>sprites\spr_musicicon</sprite>
       <sprite>sprites\spr_backbutton</sprite>
+      <sprite>sprites\spr_lmouse_button</sprite>
       <sprites name="ammoGUI">
         <sprite>sprites\spr_bulletGUI_single</sprite>
         <sprite>sprites\spr_rusticBlowdartGUI_single</sprite>
@@ -155,6 +167,16 @@
         <sprite>sprites\spr_inventory</sprite>
         <sprite>sprites\spr_coin_stack</sprite>
         <sprite>sprites\spr_items</sprite>
+        <sprites name="items">
+          <sprite>sprites\spr_item_anchovy</sprite>
+          <sprite>sprites\spr_item_mackerel</sprite>
+          <sprite>sprites\spr_item_herring</sprite>
+          <sprite>sprites\spr_item_bass</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="fishingGUI">
+        <sprite>sprites\spr_fishing_meter</sprite>
+        <sprite>sprites\spr_small_arrow</sprite>
       </sprites>
     </sprites>
     <sprites name="danger">
@@ -179,6 +201,7 @@
       <sprite>sprites\spr_lever0</sprite>
       <sprite>sprites\spr_lever0on</sprite>
       <sprite>sprites\spr_gate0</sprite>
+      <sprite>sprites\spr_gate0on</sprite>
       <sprite>sprites\spr_button0</sprite>
       <sprite>sprites\spr_button1</sprite>
       <sprite>sprites\spr_button0on</sprite>
@@ -189,6 +212,9 @@
     <sprites name="trees">
       <sprite>sprites\spr_tree_oak</sprite>
       <sprite>sprites\spr_tree_pine</sprite>
+    </sprites>
+    <sprites name="containers">
+      <sprite>sprites\spr_stash_chest</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -217,6 +243,8 @@
       <script>scripts\discord_free_dll.gml</script>
     </scripts>
     <script>scripts\scr_text_abv.gml</script>
+    <script>scripts\scr_start_fishing.gml</script>
+    <script>scripts\scr_new_fishing_task.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -242,6 +270,7 @@
       <object>objects\obj_bad_stonespike</object>
       <object>objects\obj_text</object>
       <object>objects\obj_portal</object>
+      <object>objects\obj_mouseportal</object>
       <object>objects\obj_enemymove</object>
       <object>objects\obj_cam</object>
       <object>objects\obj_setvar</object>
@@ -260,6 +289,7 @@
       <object>objects\obj_game_manager</object>
       <object>objects\obj_drawtext</object>
       <object>objects\obj_text_manager</object>
+      <object>objects\obj_fishing_controller</object>
     </objects>
     <objects name="danger">
       <object>objects\obj_woodenspike0</object>
@@ -319,9 +349,14 @@
         <object>objects\obj_itemsdisplay</object>
         <object>objects\obj_tooltipdisplay</object>
         <object>objects\obj_coin_stack_gui</object>
+        <object>objects\obj_savebutton</object>
+        <object>objects\obj_loadbutton</object>
       </objects>
-      <object>objects\obj_savebutton</object>
-      <object>objects\object96</object>
+      <objects name="fishingGUI">
+        <object>objects\obj_fishing_meter</object>
+        <object>objects\obj_fishing_arrow</object>
+        <object>objects\obj_displayfishingscore</object>
+      </objects>
     </objects>
     <objects name="switches">
       <object>objects\obj_lever0</object>
@@ -357,6 +392,9 @@
     <objects name="trees">
       <object>objects\obj_tree_oak</object>
       <object>objects\obj_tree_pine</object>
+    </objects>
+    <objects name="containers">
+      <object>objects\obj_stash_chest</object>
     </objects>
   </objects>
   <rooms name="rooms">
